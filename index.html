@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="tg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OkeyPost Layout</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .hero-gradient {
+            background: linear-gradient(106deg, #535af1 0%, #4690f0 45%, #4bb7e7 100%);
+        }
+    </style>
+</head>
+<body class="bg-white font-sans">
+
+    <nav class="max-w-7xl mx-auto px-4 py-5 flex items-center justify-between">
+        <div class="flex items-center gap-8">
+            <div class="flex items-center gap-2">
+                <img src="./src/img/Vector.png" alt="Logo" class="w-10 h-10">
+                <span class="text-2xl font-bold text-slate-800">OkeyPost</span>
+            </div>
+            
+            <div class="hidden lg:flex items-center gap-5 text-[15px] font-medium text-slate-600">
+                <a href="#" class="hover:text-blue-600">Как покупать</a>
+                <a href="#" class="hover:text-blue-600">Распродажи</a>
+                <a href="#" class="hover:text-blue-600">Цены</a>
+                <a href="#" class="hover:text-blue-600">Помощь</a>
+                <a href="#" class="hover:text-blue-600">Бонусы</a>
+                <a href="#" class="hover:text-blue-600">Блог</a>
+                <a href="#" class="hover:text-blue-600">Магазины</a>
+            </div>
+        </div>
+
+        <div class="flex items-center gap-4">
+            <a href="#" class="hidden sm:flex items-center gap-2 text-sm font-semibold">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" /></svg>
+                Вход
+            </a>
+            <button class="bg-[#00d395] hover:bg-[#00bc85] text-white px-6 py-2.5 rounded-full text-sm font-bold transition">
+                Связаться с нами
+            </button>
+        </div>
+    </nav>
+
+    <main class="max-w-[1400px] mx-auto px-4 mb-10">
+        <div class="hero-gradient rounded-[40px] px-8 py-12 md:px-20 md:py-20 flex flex-col md:flex-row items-center relative overflow-hidden min-h-[550px]">
+            
+            <div class="w-full md:w-1/2 z-10">
+                <h1 class="text-4xl md:text-6xl font-black text-white leading-tight mb-6">
+                    Доставка товаров <br> из Великобритании <br> в Россию
+                </h1>
+                <p class="text-white/90 text-lg md:text-xl mb-10 max-w-lg leading-relaxed">
+                    Начните экономить до 80% на шопинге. Регистрируйтесь в OkeyPost, чтобы покупать со скидками в UK одежду, обувь, гаджеты известных брендов и безопасно отправлять вещи в Россию.
+                </p>
+                <button class="bg-[#00d395] hover:bg-[#00bc85] text-white text-lg font-bold px-10 py-4 rounded-full shadow-lg transition-all active:scale-95">
+                    Получить адрес в UK
+                </button>
+            </div>
+
+            <div class="w-full md:w-1/2 mt-12 md:mt-0 flex justify-center">
+                <div class="relative w-full max-w-lg">
+                    <img src="./src/img/Иллюстрация.png" 
+                         alt="Hero Illustration" 
+                         class="w-full h-auto object-contain drop-shadow-2xl">
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+</body>
+</html>
